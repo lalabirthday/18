@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Happy Birthday Lala!</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <link rel="shortcut icon" href="heart.ico" type="image/x-icon">
+</head>
+
+<body>
+		<iframe width="1" height="1" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/79081413&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<p>Music: Ludovico Einaudi - Experience</p>
+				<p><em>Guess whose birthday it is today?</em></p>
+				<img src="lala.gif" align="left";";> 
+				<p></p>
+				<p style="clear: left;"><em>Yeah, you are right..</em></p>
+				<pre style='color:#000000;font-size:14px;clear:left'><span style='color:#7f0055; font-weight:bold; '>from</span> People <span style='color:#7f0055; font-weight:bold; '>import</span> Girl
+<span style='color:#7f0055; font-weight:bold; '>import</span> datetime
+
+<span style='color:#3f7f59; '># Today, the 4th day of March, is your birthday.</span>
+<span style='color:#3f7f59; '># And now that we are both programmers,</span>
+<span style='color:#3f7f59; '># I created a page (with some help from github :P)</span>
+<span style='color:#3f7f59; '># to celebrate this extraordinary day.</span>
+you = Girl(<span style='color:#2a00ff; '>'Lala Rustamli'</span>)
+<span style='color:#7f0055; font-weight:bold; '>if</span> datetime.date.today() == (<span style='color:#2a00ff; '>'2017'</span>, <span style='color:#2a00ff; '>'3'</span>, <span style='color:#2a00ff; '>'4'</span>) :
+	you.age += 1
+<span style='color:#7f0055; font-weight:bold; '>while</span> True:
+	<span style='color:#3f7f59; '># luckiness</span>
+	you.fortune += 1
+	<span style='color:#3f7f59; '># happiness</span>
+	you.happiness += 1
+	<span style='color:#3f7f59; '># will to live</span>
+	you.meaningfulness += 1	
+	<span style='color:#3f7f59; '># and everything you wish will be achieved</span>
+<span style='color:#3f7f59; '># The last I want to tell is:</span>
+<span style='color:#7f0055; font-weight:bold; '>print</span>(<span style='color:#2a00ff; '>"Happy birthday my lovely vunderkind !"</span>)
+</pre>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Time passed since you were born
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Wish you a life full of <em>whatever you want</em>.<br/>
+						<div class="signature">- Fardin</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(1999, 3, 4);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
