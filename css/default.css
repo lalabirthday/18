@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+	margin: 10;
 	padding: 0;
 	background: #FFFFEE;
 	font-size: 12px;
@@ -82,6 +82,3 @@ body {
 	left:0px;
 }
 
-audio { 
-   display:none;
-}
