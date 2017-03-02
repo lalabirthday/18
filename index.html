@@ -26,27 +26,36 @@
 				<p><em>Guess whose birthday it is today?</em></p>
 				<img src="lala.gif" align="left";> 
 				<p style="clear: left;"><em>Yeah, you are right..</em></p>
-				<pre style='color:#000000;font-size:14px;clear:left'><span style='color:#7f0055; font-weight:bold; '>from</span> People <span style='color:#7f0055; font-weight:bold; '>import</span> Girl
-<span style='color:#7f0055; font-weight:bold; '>import</span> datetime
+				<div style="background: #E3F2FD; overflow:hidden;width:auto;border:solid #E3F2FD;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000">/**</span>
+<span style="color: #008000"> * Today, the 4th day of March, is your birthday.</span>
+<span style="color: #008000"> * And now that we are both programmers,</span>
+<span style="color: #008000"> * I created a page (with some help from github :P)</span>
+<span style="color: #008000"> * to celebrate this extraordinary day.</span>
+<span style="color: #008000"> */</span>
 
-<span style='color:#3f7f59; '># Today, the 4th day of March, is your birthday.</span>
-<span style='color:#3f7f59; '># And now that we are both programmers,</span>
-<span style='color:#3f7f59; '># I created a page (with some help from github :P)</span>
-<span style='color:#3f7f59; '># to celebrate this extraordinary day.</span>
-you = Girl(<span style='color:#2a00ff; '>'Lala Rustamli'</span>)
-<span style='color:#7f0055; font-weight:bold; '>if</span> datetime.date.today() == (<span style='color:#2a00ff; '>'2017'</span>, <span style='color:#2a00ff; '>'3'</span>, <span style='color:#2a00ff; '>'4'</span>) :
-	you.age += 1
-<span style='color:#7f0055; font-weight:bold; '>while</span> True:
-	<span style='color:#3f7f59; '># luckiness</span>
-	you.fortune += 1
-	<span style='color:#3f7f59; '># happiness</span>
-	you.happiness += 1
-	<span style='color:#3f7f59; '># will to live</span>
-	you.meaningfulness += 1	
-	<span style='color:#3f7f59; '># and everything you wish will be achieved</span>
-<span style='color:#3f7f59; '># The last I want to tell is:</span>
-<span style='color:#7f0055; font-weight:bold; '>print</span>(<span style='color:#2a00ff; '>"Happy birthday my lovely stardust !"</span>)
-</pre>
+<span style="color: #0000ff">var</span> you = <span style="color: #0000ff">new</span> Girl(<span style="color: #a31515">&#39;Lala Rustamli&#39;</span>);
+<span style="color: #0000ff">var</span> your18thBirthday = <span style="color: #0000ff">new</span> Date(<span style="color: #a31515">&quot;03/04/2017&quot;</span>);
+<span style="color: #0000ff">var</span> todaysDate = <span style="color: #0000ff">new</span> Date();
+
+<span style="color: #008000">// that&#39;s when you are no longer seen as &quot;detskiy&quot; officially </span>
+<span style="color: #0000ff">if</span>(your18thBirthday.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+    you.age++;
+}
+
+<span style="color: #0000ff">while</span>(<span style="color: #0000ff">true</span>){
+        <span style="color: #008000">// luckiness</span>
+	you.fortune++;
+	<span style="color: #008000">// happiness</span>
+	you.happiness++;
+	<span style="color: #008000">// will to live</span>
+	you.meaningfulness++;	
+	<span style="color: #008000">// and everything you wish will be achieved</span>
+}
+
+<span style="color: #008000">// The last I want to tell is:</span>
+console.log(<span style="color: #a31515">&quot;Happy birthday my lovely stardust!&quot;</span>)
+</pre></div>
+
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
